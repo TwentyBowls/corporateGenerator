@@ -1,0 +1,72 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+     text-align: center;
+     background: #121212;
+     color: #e3e3e3;
+}
+section {
+     padding: 30px;
+     width: 50%;
+     background: #1e1e1e;
+     margin: 0 auto 20px;
+}
+
+.headline{
+     margin-top: 100px;
+}
+h1 {
+     font-size: 2.5rem;
+     padding: 0 30px;
+}
+
+p {
+     font-size: 1.5rem;
+     line-height: 1.4;
+
+}
+/*Make sure the duration lines up with the JS equivalent*/
+.slidein {
+     animation: fadein 1s;
+}
+
+@keyframes fadein {
+     from { 
+          opacity: 0;
+          transform: translateY(-30px);
+     }
+     to   { 
+          opacity: 1; 
+          transform: translateY(0px);
+     }
+ }
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
